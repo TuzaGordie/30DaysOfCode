@@ -67,12 +67,21 @@ h1 {
   position: relative;
 }
 
+.btn:focus {outline:0;}
+
 .btn:hover {
   transform: translateY(-3px);
 }
 
 .btn:active {
   transform: translateY(-1px);
+  text-decoration: none;
+  border: none;
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
 }
 
 .btn::after {
