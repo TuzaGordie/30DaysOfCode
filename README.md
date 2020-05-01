@@ -1,4 +1,5 @@
 # 30DaysOfCode
+This project is hosted on netlify https://thirtydaysofcode.netlify.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
