@@ -4,8 +4,15 @@ h1 {
   margin-bottom: 10rem;
 }
 
+.heading {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
 .counting {
   font-family: 'Aldrich', sans-serif;
+  animation-name: moveInRight;
+  animation-duration: 2s;
 }
 
 .container {
@@ -26,8 +33,8 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
+
 
 .buttons {
   display: flex;
@@ -38,10 +45,58 @@ h1 {
   margin: 0 3rem;
   height: 6rem;
   width: 20rem;
+  background-color: white;
   color: black;
   text-transform: uppercase;
   font-family: 'Aldrich', sans-serif;
+  transition: all .2s;
+
 }
+
+.first-button {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+
+.second-button {
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.button::after {
+  background-color: white;
+}
+
+.button:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+
 
 
 @media only screen and (max-width: 500px) {
@@ -74,4 +129,51 @@ h1 {
     font-family: 'Aldrich', sans-serif;
   }
 
+}
+
+@keyframes moveInLeft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+
+   0% {
+     opacity: 0;
+     transform: translateX(100px);
+   }
+
+   80% {
+   }
+
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+ }
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
