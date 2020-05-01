@@ -1,0 +1,77 @@
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 25rem;
+  margin-bottom: 10rem;
+}
+
+.counting {
+  font-family: 'Aldrich', sans-serif;
+}
+
+.container {
+  height: 92vh;
+  width: 100%;
+}
+
+.counter {
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+}
+
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  margin: 0 3rem;
+  height: 6rem;
+  width: 20rem;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+}
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20rem;
+  }
+
+  .button {
+    margin: 0 1rem;
+    height: 5rem;
+    width: 15rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 15rem;
+  }
+
+  .button {
+    margin: 0 1rem;
+    height: 5rem;
+    width: 12rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+}
