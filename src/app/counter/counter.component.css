@@ -18,6 +18,7 @@ h1 {
 .container {
   height: 92vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .counter {
