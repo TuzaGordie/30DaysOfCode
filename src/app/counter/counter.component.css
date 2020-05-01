@@ -1,0 +1,189 @@
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 25rem;
+  margin-bottom: 10rem;
+}
+
+.heading {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+.counting {
+  font-family: 'Aldrich', sans-serif;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
+
+.container {
+  height: 92vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.counter {
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+}
+
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  margin: 0 3rem;
+  height: 6rem;
+  width: 20rem;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+  transition: all .2s;
+
+}
+
+.first-button {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+
+.second-button {
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn:focus {outline:0;}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  text-decoration: none;
+  border: none;
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.button::after {
+  background-color: white;
+}
+
+.button:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20rem;
+  }
+
+  .button {
+    margin: 0 1rem;
+    height: 5rem;
+    width: 15rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 15rem;
+  }
+
+  .button {
+    margin: 0 1rem;
+    height: 5rem;
+    width: 12rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Aldrich', sans-serif;
+  }
+
+}
+
+@keyframes moveInLeft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+
+   0% {
+     opacity: 0;
+     transform: translateX(100px);
+   }
+
+   80% {
+   }
+
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+ }
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
