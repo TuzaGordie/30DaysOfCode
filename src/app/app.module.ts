@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { HomeComponent } from './home/home.component';
+import { AnalogClockComponent } from './analog-clock/analog-clock.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    HomeComponent
+    HomeComponent,
+    AnalogClockComponent
   ],
   imports: [
     BrowserModule,
