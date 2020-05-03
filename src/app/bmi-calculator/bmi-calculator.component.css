@@ -35,3 +35,10 @@
   }
 
 }
+
+@media only screen and (max-width: 322px) {
+  .heading {
+    padding-top: 1rem;
+  }
+
+}
