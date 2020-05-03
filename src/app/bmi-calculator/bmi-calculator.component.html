@@ -17,7 +17,7 @@
         <div class="form-row pb">
           <div class="col-md-4 col-sm-4">
             <label for="weight">Height</label>
-            <input  type="number" name="feet" class="form-control" placeholder="Feet" [(ngModel)]="feet" >
+            <input  type="number" name="feet" class="form-control" placeholder="Foot" [(ngModel)]="feet" >
           </div>
           <div class="col-md-4 col-sm-4">
             <label for="weight">Height</label>
@@ -48,7 +48,7 @@
       </ul>
     </div>
   </div>
-  <h3 class="text-center"><span>Your BMI is: {{bmi | ellipsis: 4}}</span></h3>
+  <h3 class="text-center"><span>Your BMI is: {{bmi | number:'1.2-2'}}</span></h3>
 
 </div>
 
