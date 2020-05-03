@@ -1,0 +1,37 @@
+.bmi-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.ff {
+  font-family: 'Righteous', cursive;
+}
+
+.mt {
+  padding-top: 2rem;
+}
+
+.pb {
+  margin-bottom: 3rem;
+}
+
+.space {
+  height:7rem;
+}
+
+.heading {
+  padding-top: 15rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .space {
+    height: .2rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="bmi-container">
+    <div class="bmi-content">
+      <div class="heading">
+        <h1 class="ff text-center">BMI CALCULATOR</h1>
+        <h4 class="ff text-center">Body mass index (BMI) is the measure of body fat based on height and weight of a
+          person.</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-9 col-md-9">
+      <form>
+
+        <div class="form-row pb">
+          <div class="col-md-4 col-sm-4">
+            <label for="weight">Height</label>
+            <input  type="number" name="feet" class="form-control" placeholder="Feet" [(ngModel)]="feet" >
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <label for="weight">Height</label>
+            <input type="number" name="inches" class="form-control" placeholder="Inches" [(ngModel)]="inches">
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <label for="weight">Weight</label>
+            <input id="weight" name="weight" type="number" class="form-control" placeholder="kilogram" [(ngModel)]="weight">
+          </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="form-row ">
+          <div class="col-md-12 col-sm-12">
+            <input (click)="calculate()" type="submit" class="btn btn-primary col-sm-12 col-md-12" value="Calculate" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-3">
+      <h4 class="ff text-center">Know your status</h4>
+      <ul class="ff">
+        <li> Lesser than 18.5 = Under weight</li>
+        <li>18.5 – 24.9 = Normal weight</li>
+        <li>25 – 29.9 = Over weight</li>
+        <li>Obesity = BMI of 30 or greater</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="text-center"><span>Your BMI is: {{bmi | ellipsis: 4}}</span></h3>
+
+</div>
+
+

@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { HomeComponent } from './home/home.component';
 import { AnalogClockComponent } from './analog-clock/analog-clock.component';
+import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {EllipsisPipe} from './bmi-calculator/ellipsis.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     HomeComponent,
-    AnalogClockComponent
+    AnalogClockComponent,
+    BmiCalculatorComponent,
+    EllipsisPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
