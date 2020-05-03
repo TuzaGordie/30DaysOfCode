@@ -36,7 +36,7 @@
 
 }
 
-@media only screen and (max-width: 322px) {
+@media only screen and (max-width: 765px) {
   .heading {
     padding-top: 1rem;
   }
