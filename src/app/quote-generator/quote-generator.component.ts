@@ -9,7 +9,7 @@ export class QuoteGeneratorComponent implements OnInit {
   randomNumber;
   quotes = [
     'The Way To Get Started Is To Quit Talking And Begin Doing. -Walt Disney',
-    'The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees The Opportunity In Every Opportunity',
+    'The Pessimist sees difficulty in Every opportunity. The Optimist sees the opportunity in every opportunity',
     'Don\'t Let Yesterday Take Up Too Much Of Today. -Will Rogers',
     'You Learn More From Failure Than From Success. Don\'t Let It Stop You',
     'It\'s Not Whether You Get Knocked Down, It\'s Whether You Get Up.- Vince Lombardi',
