@@ -9,6 +9,7 @@ import { AnalogClockComponent } from './analog-clock/analog-clock.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {EllipsisPipe} from './bmi-calculator/ellipsis.pipe';
+import { QuoteGeneratorComponent } from './quote-generator/quote-generator.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {EllipsisPipe} from './bmi-calculator/ellipsis.pipe';
     AnalogClockComponent,
     BmiCalculatorComponent,
     EllipsisPipe,
+    QuoteGeneratorComponent,
   ],
   imports: [
     BrowserModule,
