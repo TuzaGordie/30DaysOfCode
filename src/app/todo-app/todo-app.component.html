@@ -1,10 +1,9 @@
-<div class="container">
-  <div class="todo-wrapper">
-    <div class="todo-inner">
-      <div class="todo-container" *ngFor="let todo of todoService.getTodos()">
-        <app-todo-item [todo]="todo"></app-todo-item>
-      </div>
-      <router-outlet></router-outlet>
-    </div>
+<div id="container">
+  <h1 class="text-center">To-Do List</h1>
+  <div class="todo-container" >
+  <app-todo-form></app-todo-form>
   </div>
+  <ul *ngFor="let todo of todoService.getTodos()">
+    <app-todo-item [todo]="todo"></app-todo-item>
+  </ul>
 </div>

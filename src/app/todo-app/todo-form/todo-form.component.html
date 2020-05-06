@@ -1,8 +1,4 @@
-<div class="todo-form">
-  <div class="input">
-    <input type="text" placeholder="add task" name="todo-text" [(ngModel)]="todoText" />
-  </div>
-  <div class="button">
-    <button (click)="addTodo()">ADD</button>
-  </div>
+<div class="inputBox">
+  <input type="text" name="newInput" maxlength="32" placeholder="Add new task..." [(ngModel)]="todoText"/>
+  <button class="enterBtn" id="enter" (click)="addTodo()">ADD</button>
 </div>

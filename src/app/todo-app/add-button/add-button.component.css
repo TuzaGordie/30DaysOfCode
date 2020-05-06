@@ -1,12 +1,12 @@
+
+
 .add-icon {
-  /*position: absolute;*/
-  /*right: 2.5rem;*/
-  /*top: 61rem;*/
   background-color: yellowgreen;
   border-radius: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
+  position: absolute;
 }
 
 
@@ -26,11 +26,19 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .add-icon {
+    position: absolute;
+    right: 2.5rem;
+    top: 51.5rem;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .add-icon {
     position: absolute;
     right: 2.5rem;
-    top: 57rem;
+    top: 46.5rem;
   }
 }
 

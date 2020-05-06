@@ -1,22 +1,38 @@
-.container {
-  height: 98vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#container{
+  max-width: 40%;
+  max-height: 40%;
+  margin: 10% auto;
+  background-color: #f7f7f7;
+  box-shadow: 3px 6px 8px rgba(76, 75, 75, 0.644);
+  overflow: hidden;
 }
 
-.todo-wrapper {
-  height: 80vh;
-  width: 40rem;
-  border: 2px solid yellowgreen;
+h1{
+  background-color: #45c556ee;
+  color: white;
+  margin: 0;
+  padding: 1rem 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.todo-inner {
-  position: relative;
-  padding: 1rem;
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.todo-container {
-  padding: .5rem;
+
+.complete{
+  color: grey;
+  text-decoration: line-through;
+}
+
+
+.fa-plus-rotate {
+  transform: rotate(-45deg);
+  float: right;
 }

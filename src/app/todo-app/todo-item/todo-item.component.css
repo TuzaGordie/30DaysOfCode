@@ -1,9 +1,32 @@
-.todo-item {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid yellowgreen;
+li{
+  padding-left: 40px;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
 }
 
-.delete {
+
+li:nth-child(2n){
+  background-color: #b8e9c013;
+}
+
+li:nth-last-child(1){
+  border-radius: 0 0 18px 18px;
+}
+
+li span{
+  color: #e74c3c;
+  height: 40px;
+  text-align: center;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
   cursor: pointer;
 }
 
+li:hover span{
+  width: 40px;
+  opacity: 1.0;
+}
