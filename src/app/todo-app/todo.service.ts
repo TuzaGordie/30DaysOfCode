@@ -30,4 +30,8 @@ export class TodoService {
   removeTodo(id: number) {
     this.todos = this.todos.filter((todo) => todo.id !== id);
   }
+
+  setLocalStorageTodo(todos: Todo[]) {
+    localStorage.setItem('todos', JSON.stringify({ todos }));
+  }
 }
