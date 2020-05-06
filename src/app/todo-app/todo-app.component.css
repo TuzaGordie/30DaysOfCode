@@ -1,0 +1,22 @@
+.container {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-wrapper {
+  height: 80%;
+  width: 40rem;
+  border: 2px solid yellowgreen;
+}
+
+.todo-inner {
+  position: relative;
+  padding: 1rem;
+}
+
+.todo-container {
+  padding: .5rem;
+}

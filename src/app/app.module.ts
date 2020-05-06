@@ -10,6 +10,11 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {EllipsisPipe} from './bmi-calculator/ellipsis.pipe';
 import { QuoteGeneratorComponent } from './quote-generator/quote-generator.component';
+import { TodoAppComponent } from './todo-app/todo-app.component';
+import { TodoFormComponent } from './todo-app/todo-form/todo-form.component';
+import { AddButtonComponent } from './todo-app/add-button/add-button.component';
+import { TodoItemComponent } from './todo-app/todo-item/todo-item.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +25,10 @@ import { QuoteGeneratorComponent } from './quote-generator/quote-generator.compo
     BmiCalculatorComponent,
     EllipsisPipe,
     QuoteGeneratorComponent,
+    TodoAppComponent,
+    TodoFormComponent,
+    AddButtonComponent,
+    TodoItemComponent,
   ],
   imports: [
     BrowserModule,

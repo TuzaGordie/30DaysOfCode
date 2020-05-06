@@ -1,0 +1,9 @@
+.todo-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid yellowgreen;
+}
+
+.delete {
+  cursor: pointer;
+}
+
