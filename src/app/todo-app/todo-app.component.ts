@@ -12,7 +12,7 @@ export class TodoAppComponent implements OnInit {
   @Input()
   todo: Todo;
 
-  constructor(private todoService: TodoService) {
+  constructor(public todoService: TodoService) {
   }
 
   ngOnInit() {
